@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geologica:wght@100&family=Lato:wght@100&family=Poppins:wght@100;400&family=Roboto:ital,wght@0,300;1,100&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/movil.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <script src="https://kit.fontawesome.com/2ee0245f3d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <title>Proyecto Final | Evette</title>
+</head>
+
+<body>
+
+    <header id="inicio">
+        <nav class="ancho">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+                <i id="icono-menu" class="fa-solid fa-bars"></i>
+            </div>
+            <ul id="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#carousel">Calendario</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#preguntas">Preguntas</a></li>
+            </ul>
+        </nav>
+
+        <div class="cabecera-texto wow animate__animated animate__fadeInUp">
+            <h2>Tips esenciales para la felicidad y productividad</h2>
+            <a href="#" class="boton" id="Btn">Contactanos</a>
+        </div>
+
+        <div class="cabecera-imagen">
+            <figure>
+                <img src="img/header-logo.jpg" alt="">
+            </figure>
+        </div>
+    </header>
+
+    <section class="noticias" id="noticias">
+        <div class="titulos ancho">
+            <h2>Noticias</h2>
+            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam reprehenderit ipsa suscipit, culpa
+                rerum quia exercitationem optio sunt nemo! Et. Lorem ipsum dolor.</h3>
+        </div>
+
+        <div class="tabs ancho">
+            <div class="tab active" onclick="showTab(1)">Todos</div>
+            <div class="tab" onclick="showTab(2)">Interiores </div>
+            <div class="tab" onclick="showTab(3)">Relaciones</div>
+            <div class="tab" onclick="showTab(4)">Deportes</div>
+            <div class="tab" onclick="showTab(5)">Libros</div>
+            <div class="tab" onclick="showTab(6)">Autos</div>
+            <div class="tab" onclick="showTab(7)">Variado</div>
+        </div>
+
+        <div class="noticias-contenedor ancho wow animate__animated animate__fadeInUp" id="tab1">
+            <article class="noticias-card">
+                <div class="imagen">
+                    <figure>
+                        <img src="img/news1.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="titulo">
+                    <h2>Interiores</h2>
+                </div>
+
+                <div class="cuerpo">
+                    <h2>Decorando una habitacion moderna.</h2>
+                    <hr>
+                    <p>12 de Noviembre, 2023</p>
+                </div>
+            </article>
+
+            <article class="noticias-card">
+                <div class="imagen">
+                    <figure>
+                        <img src="img/news2.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="titulo">
+                    <h2>Relaciones</h2>
+                </div>
+
+                <div class="cuerpo">
+                    <h2>Tips para construir una relacion sana.</h2>
+                    <hr>
+                    <p>12 de Noviembre, 2023</p>
+                </div>
+            </article>
+
+            <article class="noticias-card">
+                <div class="imagen">
+                    <figure>
+                        <img src="img/news3.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="titulo">
+                    <h2>Deportes</h2>
+                </div>
+
+                <div class="cuerpo">
+                    <h2>Habitos para ser una persona mas saludable.</h2>
+                    <hr>
+                    <p>12 de Noviembre, 2023</p>
+                </div>
+            </article>
+
+            <article class="noticias-card">
+                <div class="imagen">
+                    <figure>
+                        <img src="img/news4.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="titulo">
+                    <h2>Relaciones</h2>
+                </div>
+
+                <div class="cuerpo">
+                    <h2>Consejos para convertirse en mejor pareja.</h2>
+                    <hr>
+                    <p>12 de Noviembre, 2023</p>
+                </div>
+            </article>
+
+            <article class="noticias-card">
+                <div class="imagen">
+                    <figure>
+                        <img src="img/news5.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="titulo">
+                    <h2>Interiores</h2>
+                </div>
+
+                <div class="cuerpo">
+                    <h2>Como tener mas espacio en casa.</h2>
+                    <hr>
+                    <p>12 de Noviembre, 2023</p>
+                </div>
+            </article>
+
+            <article class="noticias-card">
+                <div class="imagen">
+                    <figure>
+                        <img src="img/news6.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="titulo">
+                    <h2>Deportes</h2>
+                </div>
+
+                <div class="cuerpo">
+                    <h2>Como el trotar diario aumenta tu calidad de vida.</h2>
+                    <hr>
+                    <p>12 de Noviembre, 2023</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="noticias-contenedor ancho">
+            <article id="tab2" class="noticias-card" style="display: none">
+                <div class="imagen">
+                    <figure>
+                        <img src="img/news1.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="titulo">
+                    <h2>Interiores</h2>
+                </div>
+
+                <div class="cuerpo">
+                    <h2>Decorando una habitacion moderna.</h2>
+                    <hr>
+                    <p>12 de Noviembre, 2023</p>
+                </div>
+            </article>
+
+            <article id="tab3" class="noticias-card" style="display: none">
+                <div class="imagen">
+                    <figure>
+                        <img src="img/news2.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="titulo">
+                    <h2>Relaciones</h2>
+                </div>
+
+                <div class="cuerpo">
+                    <h2>Tips para construir una relacion sana.</h2>
+                    <hr>
+                    <p>12 de Noviembre, 2023</p>
+                </div>
+            </article>
+
+            <article id="tab4" class="noticias-card" style="display: none">
+                <div class="imagen">
+                    <figure>
+                        <img src="img/news3.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="titulo">
+                    <h2>Deportes</h2>
+                </div>
+
+                <div class="cuerpo">
+                    <h2>Habitos para ser una persona mas saludable.</h2>
+                    <hr>
+                    <p>12 de Noviembre, 2023</p>
+                </div>
+            </article>
+
+            <article id="tab5" class="noticias-card" style="display: none">
+                <div class="imagen">
+                    <figure>
+                        <img src="img/news4.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="titulo">
+                    <h2>Relaciones</h2>
+                </div>
+
+                <div class="cuerpo">
+                    <h2>Consejos para convertirse en mejor pareja.</h2>
+                    <hr>
+                    <p>12 de Noviembre, 2023</p>
+                </div>
+            </article>
+
+            <article id="tab6" class="noticias-card" style="display: none">
+                <div class="imagen">
+                    <figure>
+                        <img src="img/news5.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="titulo">
+                    <h2>Interiores</h2>
+                </div>
+
+                <div class="cuerpo">
+                    <h2>Como tener mas espacio en casa.</h2>
+                    <hr>
+                    <p>12 de Noviembre, 2023</p>
+                </div>
+            </article>
+
+            <article id="tab7" class="noticias-card" style="display: none">
+                <div class="imagen">
+                    <figure>
+                        <img src="img/news6.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="titulo">
+                    <h2>Deportes</h2>
+                </div>
+
+                <div class="cuerpo">
+                    <h2>Como el trotar diario aumenta tu calidad de vida.</h2>
+                    <hr>
+                    <p>12 de Noviembre, 2023</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="parallax">
+
+    </section>
+
+    <section id="carousel" class="calendario wow animate__animated animate__fadeInUp">
+        <div class="titulos ancho">
+            <h2>Noticias Recientes</h2>
+        </div>
+        <div id="slide-container" class="ancho">
+            <article class="slide" data-slideIndex="0">
+                <h2>24 de Noviembre</h2>
+
+                <figure>
+                    <img src="img/recent-news-01.jpg" alt="">
+                </figure>
+
+                <p>Como eficientar tu tiempo y ser mas productivo durante el dia.</p>
+
+                <a href="#" class="boton">Explorar</a>
+            </article>
+
+            <article class="slide" data-slideIndex="1">
+                <h2>25 de Noviembre</h2>
+
+                <figure>
+                    <img src="img/recent-news-02.jpg" alt="">
+                </figure>
+
+                <p>Ser mas productivo ayuda a no procastinar frecuentemente.</p>
+
+                <a href="#" class="boton">Explorar</a>
+            </article>
+
+            <article class="slide" data-slideIndex="2">
+                <h2>26 de Noviembre</h2>
+
+                <figure>
+                    <img src="img/recent-news-03.jpg" alt="">
+                </figure>
+
+                <p>Leer libros a diario ayuda en aprender muchas cosas nuevas.</p>
+
+                <a href="#" class="boton">Explorar</a>
+            </article>
+
+            <article class="slide" data-slideIndex="3">
+                <h2>27 de Noviembre</h2>
+
+                <figure>
+                    <img src="img/recent-news-04.jpg" alt="">
+                </figure>
+
+                <p>Como el comer saludable te ayuda y te hace vivir mas tiempo.</p>
+
+                <a href="#" class="boton">Explorar</a>
+            </article>
+
+            <article class="slide" data-slideIndex="4">
+                <h2>28 de Noviembre</h2>
+
+                <figure>
+                    <img src="img/recent-news-01.jpg" alt="">
+                </figure>
+
+                <p>Como eficientar tu tiempo y ser mas productivo durante el dia.</p>
+
+                <a href="#" class="boton">Explorar</a>
+            </article>
+
+            <article class="slide" data-slideIndex="5">
+                <h2>29 de Noviembre</h2>
+
+                <figure>
+                    <img src="img/recent-news-02.jpg" alt="">
+                </figure>
+
+                <p>Como eficientar tu tiempo y ser mas productivo durante el dia.</p>
+
+                <a href="#" class="boton">Explorar</a>
+            </article>
+        </div>
+
+        <div id="back-button" class="arrow back">
+            <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div id="forward-button" class="arrow forward">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </section>
+
+    <section class="preguntas ancho" id="preguntas">
+        <div class="titulos">
+            <h2>Preguntas Frecuentes</h2>
+        </div>
+
+        <div class="preguntas">
+            <div class="pregunta">
+                <div class="acordeon_titulo">
+                    <h2>¿Como agendar una cita?</h2>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="acordeon_contenido">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tenetur omnis iusto cum nihil
+                        tempora necessitatibus architecto autem praesentium ipsum.</p>
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <div class="acordeon_titulo">
+                    <h2>¿Como pagar?</h2>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="acordeon_contenido">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tenetur omnis iusto cum nihil
+                        tempora necessitatibus architecto autem praesentium ipsum.</p>
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <div class="acordeon_titulo">
+                    <h2>¿Donde se ubican?</h2>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="acordeon_contenido">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tenetur omnis iusto cum nihil
+                        tempora necessitatibus architecto autem praesentium ipsum.</p>
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <div class="acordeon_titulo">
+                    <h2>¿Que horarios tienen?</h2>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="acordeon_contenido">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tenetur omnis iusto cum nihil
+                        tempora necessitatibus architecto autem praesentium ipsum.</p>
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <div class="acordeon_titulo">
+                    <h2>¿Como los encuentro?</h2>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="acordeon_contenido">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tenetur omnis iusto cum nihil
+                        tempora necessitatibus architecto autem praesentium ipsum.</p>
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <div class="acordeon_titulo">
+                    <h2>¿Tienen servicio?</h2>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="acordeon_contenido">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tenetur omnis iusto cum nihil
+                        tempora necessitatibus architecto autem praesentium ipsum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="galeria ancho" id="galeria">
+        <div class="titulos ancho">
+            <h2>Galeria de fotos</h2>
+            <p>Mira nuestras imagenes mas recientes.</p>
+        </div>
+        <div class="contenedor-fotos">
+            <a data-fancybox="gallery" data-src="img/galeria-1.jpg" data-caption="imagen1">
+                <figure>
+                    <img src="img/galeria-1.jpg" alt="">
+                </figure>
+            </a>
+            <a data-fancybox="gallery" data-src="img/galeria-2.jpg" data-caption="imagen2">
+                <figure>
+                    <img src="img/galeria-2.jpg" alt="">
+                </figure>
+            </a>
+            <a data-fancybox="gallery" data-src="img/galeria-3.jpg" data-caption="imagen3">
+                <figure>
+                    <img src="img/galeria-3.jpg" alt="">
+                </figure>
+            </a>
+            <a data-fancybox="gallery" data-src="img/galeria-4.jpg" data-caption="imagen4">
+                <figure>
+                    <img src="img/galeria-4.jpg" alt="">
+                </figure>
+            </a>
+            <a data-fancybox="gallery" data-src="img/galeria-5.jpg" data-caption="imagen5">
+                <figure>
+                    <img src="img/galeria-5.jpg" alt="">
+                </figure>
+            </a>
+            <a data-fancybox="gallery" data-src="img/galeria-6.jpg" data-caption="imagen6">
+                <figure>
+                    <img src="img/galeria-6.jpg" alt="">
+                </figure>
+            </a>
+        </div>
+    </section>
+
+    <section class="videos">
+        <div class="titulos ancho">
+            <h2>Los videos mas recientes</h2>
+            <p>Estos son nuestros videos mas populares del momento.</p>
+        </div>
+
+        <div class="contenedor-videos ancho">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/sm_-BMP2nKs?si=JH47jaXIgETKETc5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/qG3TpP-yFz0?si=mw8JKvqn8K4-mjlW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/E6l0ObY2XVM?si=mjuBv8_zY0RkBHEu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="ancho foot">
+            <div class="pie">
+                <div class="logos">
+                    <img src="img/footer-logo.png" alt="">
+
+                    <form action="">
+                        <input type="email" placeholder="E-mail" required>
+                        <input type="submit" value="Suscribete">
+                    </form>
+
+                    <p>© 2020 Patron. All rights reserved. Privacy Policy</p>
+                </div>
+            </div>
+            <div class="pie-pagina">
+                <div class="pie-contenedor">
+                    <ul>
+                        <li><a>Nosotros</a></li>
+                        <li><a>Noticias</a></li>
+                        <li><a>Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="pie-contenedor">
+                    <ul>
+                        <li><a>Unete</a></li>
+                        <li><a>Redes sociales</a></li>
+                        <li><a>Conocenos</a></li>
+                    </ul>
+                </div>
+
+                <div class="pie-contenedor">
+                    <ul>
+                        <li><a>Poliza de privacidad</a></li>
+                        <li><a>Cookies</a></li>
+                        <li><a>Publicaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="modal" class="fondomodal">
+        <div class="contenidomodal">
+          <div class="alineacion_cerrar">
+            <i id="cerrarbtn" class="cerrarmodal fas fa-times-circle"></i>
+          </div>
+          <br><br>
+          <article class="form">
+            <h2>Contactanos</h2>
+            <form action="">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electronico" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+          </article>
+        </div>
+      </section>
+
+    <a href="#inicio" class="fixed">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="js/carrousel.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+
+    <script>
+        var fondo = document.getElementById("modal");
+        $("#Btn").click(function () {
+          fondo.style.display = "block";
+        });
+        $("#cerrarbtn").click(function () {
+          fondo.style.display = "none";
+        });
+      </script>
+
+    <script>
+        $(function () {
+            $("#slider4").responsiveSlides({
+                auto: false,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(".acordeon_titulo").click(function () {
+            var t = $(this);
+            var tp = t.next();
+            tp.slideToggle();
+        });
+    </script>
+
+    <script>
+        $("#icono-menu").click(function () {
+            $("#menu").slideToggle();
+        });
+    </script>
+
+    <script>
+        Fancybox.bind('[data-fancybox]', {
+        //
+        });
+    </script>
+
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
